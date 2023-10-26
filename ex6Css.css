@@ -1,0 +1,44 @@
+label{
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px;
+}
+body{
+    background: url(4K-Wallpaper-River.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#Checkboxed{
+   display: block;
+}
+input[type="text"],input[type="date"],
+input[type="number"], select  {
+width: 40%;
+padding: 8px 10px;
+display: block;
+border: 1px solid #5b5353c9;
+border-radius: 4px;
+box-sizing: border-box;
+}
+#container{
+    display: block;
+    padding: 10px;
+    position: fixed;
+    margin: 15px;
+    background-color: rgba(132, 119, 47, 0.505);
+}
+input#Button{
+    color: white;
+    background-color: rgba(243, 200, 6, 0.374);
+    width: 100%;
+    margin-top: 5%;
+    padding: 15px;
+    border-radius: 4%;
+    border:1px solid rgba(221, 255, 0, 0.63) ;
+   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.129);
+}
+#Button:hover{
+    box-shadow:  0 17px 50px 0 rgba(0, 0, 0, 0.695);
+}

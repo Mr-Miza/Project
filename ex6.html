@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ex6Css.css">
+</head>
+<body >
+  
+<div id="container">
+    <h1 style="color: rgba(167, 211, 10, 0.785);">
+        Travel reservation form
+    </h1>
+    <form method="post" action="">
+        <div>
+            <label for="fname">First Name</label>
+            <div class="inFields">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+</div>
+<div>
+    <label for="email"> Email adress:*</label>
+    <div class="inFields">
+        <input type="text" name="email">
+    </div>
+</div>
+
+<label>Select tour package:</label>
+
+<div>
+<select name="package" >
+    <option value="Durrs">Durres</option>
+    <option value="vlor">Vlore</option>
+    <option value="sarand">Sarande</option>
+    <option value="kacivel">Ksamil</option>
+</select>
+</div>
+
+<label for="date" > Arrival Date</label>
+<input name="date" type="date">
+
+<label for="nrPPl">Number of Persons</label>
+<input type="number" name="nrPPl">
+    <div id="Checkboxed">
+    <label>
+    What service would u want to get ?
+     </label><br>
+
+<label>Boarding</label>
+    <input type="checkbox" value="1" style="color: rgb(162, 255, 0);" >
+ <label>Fooding</label> 
+    <input type="checkbox" value="2" >
+    </div>
+        <input id="Button" type="submit" value="Resevation complete">
+            
+            </form>
+         </div>
+    </body>
+</html>
