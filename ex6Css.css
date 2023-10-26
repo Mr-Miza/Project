@@ -12,7 +12,8 @@ body{
 }
 #Checkboxed{
    display: block;
-}
+} 
+
 input[type="text"],input[type="date"],
 input[type="number"], select  {
 width: 40%;
