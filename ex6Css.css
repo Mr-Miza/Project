@@ -43,3 +43,23 @@ input#Button{
 #Button:hover{
     box-shadow:  0 17px 50px 0 rgba(0, 0, 0, 0.695);
 }
+#imgContainer{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 700px;
+    height: 400px; 
+    background-color: rgba(204, 168, 7, 0.5);
+    position: absolute;
+    left: 40%;
+    top: 15%;
+}
+#imgButton{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 870px;
+    top: 520px;
+    background-color: rgba(241, 182, 110, 0.738);
+    color: #ffffff;
+}

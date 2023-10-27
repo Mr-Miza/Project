@@ -29,11 +29,11 @@
 <label>Select tour package:</label>
 
 <div>
-<select name="package" >
-    <option value="Durrs">Durres</option>
-    <option value="vlor">Vlore</option>
-    <option value="sarand">Sarande</option>
-    <option value="kacivel">Ksamil</option>
+<select id="package" >
+    <option value="1">Durres</option>
+    <option value="2">Vlore</option>
+    <option value="3">Sarande</option>
+    <option value="4">Ksamil</option>
 </select>
 </div>
 
@@ -56,5 +56,25 @@
             
             </form>
          </div>
+         <div>
+             <div id="imgContainer"> </div>
+             <button id="imgButton" onclick="changeImg()"> See place</button>
+         </div>
+         <script>
+             let a= document.getElementById("imgContainer").style ;
+             function changeImg() {
+                let s = document.getElementById("package").value ;
+                console.log(s)
+
+                    if(s==1)
+                        a.backgroundImage="url(https://durreslajm.al/app/uploads/2021/11/12472672_223217598010687_3680508570718407851_n-1.jpg)";
+                    if(s==2)
+                    a.backgroundImage="url(https://albaniatouristplaces.com/wp-content/uploads/2023/02/visit-vlora.jpg)";
+                    if(s==3)
+                    a.backgroundImage="url(https://thewanderingwhites.com/wp-content/uploads/2022/08/20220715_121857-01.jpeg)";
+                    if(s==4)
+                    a.backgroundImage="url(https://myelatedodyssey.com/wp-content/uploads/2023/03/Featured-9.jpg)";
+             }
+         </script>
     </body>
 </html>
