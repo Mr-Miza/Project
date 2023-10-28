@@ -52,7 +52,7 @@
  <label>Fooding</label> 
     <input type="checkbox" value="2" >
     </div>
-        <input id="Button" type="submit" value="Resevation complete">
+        <input id="Button" type="submit" value="Resevation complete" onclick="showText(event)">
             
             </form>
          </div>
@@ -60,12 +60,13 @@
              <div id="imgContainer"> </div>
              <button id="imgButton" onclick="changeImg()"> See place</button>
          </div>
+         <div id="tyMsg"> 
+            <h3>Thank you for the reservation </h3>
+        </div>
          <script>
              let a= document.getElementById("imgContainer").style ;
              function changeImg() {
-                let s = document.getElementById("package").value ;
-                console.log(s)
-
+                let s = document.getElementById("package").value; 
                     if(s==1)
                         a.backgroundImage="url(https://durreslajm.al/app/uploads/2021/11/12472672_223217598010687_3680508570718407851_n-1.jpg)";
                     if(s==2)
@@ -74,6 +75,16 @@
                     a.backgroundImage="url(https://thewanderingwhites.com/wp-content/uploads/2022/08/20220715_121857-01.jpeg)";
                     if(s==4)
                     a.backgroundImage="url(https://myelatedodyssey.com/wp-content/uploads/2023/03/Featured-9.jpg)";
+             }
+             function showText(event) {
+                event.preventDefault();
+               let a =document.getElementById("tyMsg").style ;
+               a.display= "inline-block";
+                
+                setTimeout(() => {
+                    a.display="none" ;
+                }, "3000");
+
              }
          </script>
     </body>
